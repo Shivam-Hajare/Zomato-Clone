@@ -165,7 +165,7 @@ nav a{
 
 /* collection section */
 .collections{
-    width: 85%;
+    width: 90%;
     margin: auto;
 }
 .collections h1{
@@ -246,6 +246,93 @@ nav a{
     font-weight: 400;
     letter-spacing: 0.5px;
 }
+
+/* popular localities section */
+
+.popular_section{
+    width: 100%;
+}
+
+.popular_section p:nth-child(1){
+    font-size: 2rem;
+    margin: 50px auto 30px 7.5%;
+    line-height: 1.2;
+    font-weight: 400;
+}
+.popular_container{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.popular_item{
+    display: flex;
+    gap: 1rem;
+    padding: 20px 15px 20px 20px;
+    cursor: pointer;
+
+}
+.pop_item_content{
+    flex:1;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid rgb(232, 228, 228);
+}
+.pop_item_content h5{
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 400;
+}
+.pop_item_content p{
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: gray;
+}
+.popular_item button{
+    border: none;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 2440px) {
+   .popular_item{
+        width: 33%;
+   }
+   .popular_container{
+    justify-content: center;
+   }
+}
+@media only screen and (max-width: 900px) {
+    .popular_item{
+        width:50%;
+   }
+
+}
+@media only screen and (max-width: 700px) {
+    .popular_item{
+        width: 100%;
+   }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* get__the_app */
 .get__the_app{
@@ -489,6 +576,11 @@ nav a{
 @media only screen and (max-width: 600px){
     .navigation_container{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .section1__buttonContainer{
+        display: flex;
+        gap: 0.5rem;
+        margin-left: 15px;
     }
 }
 

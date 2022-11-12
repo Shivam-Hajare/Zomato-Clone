@@ -294,6 +294,7 @@ nav a{
 .popular_item button{
     border: none;
     cursor: pointer;
+    background-color: white;
 }
 
 
